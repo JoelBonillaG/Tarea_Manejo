@@ -1,41 +1,916 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hola Mundo</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-      h1 {
-        font-size: 3rem;
-        color: #007bff;
-        animation: fadeIn 2s ease-in-out;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hola Mundo</h1>
-
+    <!-- Google Tag Manager -->
     <script>
-      // Ejemplo de interactividad
-      console.log("¡Hola Mundo desde la consola!");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5BB8W2X");
     </script>
+    <!-- End Google Tag Manager -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portafolio Personal</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169007209-3");
+    </script>
+
+    <!-- =======================================================
+  * Template Name: Personal - v2.1.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-tops">
+      <div class="container">
+        <h1><a href="index.html">Joel Bonilla</a></h1>
+        <h2 style="color: #fff">
+          Soy <span class="typing" style="color: #12d640"></span>
+        </h2>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active">
+              <a href="#header"> <span>Inicio</span></a>
+            </li>
+            <li>
+              <a href="#about"><span>Sobre Mi</span></a>
+            </li>
+            <li>
+              <a href="#education"> <span>Formación</span></a>
+            </li>
+            <!-- <li>
+              <a href="#experience"> <span>Experience</span></a>
+            </li> -->
+            <!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
+
+            <li>
+              <a href="#skills"> <span>Habilidades</span></a>
+            </li>
+            <li>
+              <a href="#portfolio"> <span>Proyectos</span></a>
+            </li>
+            <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
+            <li>
+              <a href="#contacts"> <span>Contacto</span></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+
+        <div class="social-links">
+          <a
+            href="https://github.com/JoelBonillaG"
+            target="_blank"
+            class="github"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            href="mailto:bjeferssonvinicio2005@gmail.com"
+            target="_blank"
+            class="google"
+            ><i class="bx bxl-google"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+        <div class="section-title"></div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3 style="color: #12d640">Perfil Profesional</h3>
+            <p>
+              Soy un estudiante de la carrera de Ingeniería de Software con una
+              gran pasión por la tecnología. Me motiva crear soluciones
+              innovadoras en desarrollo backend y frontend, además de trabajar
+              con bases de datos. Me destaco en entornos colaborativos gracias a
+              mis habilidades de comunicación y responsabilidad, lo que me
+              permite contribuir eficazmente en equipos de trabajo.
+            </p>
+
+            <h3 style="color: #12d640">Objetivo Profesional</h3>
+            <p>
+              Mi objetivo es convertirme en un desarrollador Full Stack
+              altamente capacitado, creando soluciones tecnológicas que
+              resuelvan problemas reales. Busco adquirir experiencia tanto en
+              backend como frontend, y seguir aprendiendo para adaptarme a las
+              nuevas tecnologías y contribuir a proyectos de impacto social y
+              empresarial.
+            </p>
+            <div class="row"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me -->
+
+      <!-- ======= Interests ======= -->
+      <div class="interests container">
+        <div class="section-title">
+          <h2>Intereses</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-global-line" style="color: #ffbb2c"></i>
+              <h3>Desarrollo de software</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #dfe62e"></i>
+              <!-- Puedes cambiar el color aquí -->
+              <h3>Base de Datos</h3>
+              <!-- o "Databases" en inglés -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-settings-3-line" style="color: #28a745"></i>
+              <!-- Ícono de engranaje -->
+              <h3>Ingeniería de Software</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #5578ff"></i>
+              <h3>Machine Learning</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Interests -->
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="services">
+      <div class="container" style="margin-top: 10px">
+        <div class="section-title">
+          <h2>Educación</h2>
+        </div>
+        <div class="row" style="display: flex; justify-content: flex-start">
+          <div
+            class="col-md-4 mt-4 mt-md-0 icon-box"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            style="padding: 0px 0px; padding-bottom: 5px; margin-right: 15px"
+          >
+            <img
+              src="assets/img/education/Huachi_Grande.png"
+              class="img-fluid"
+              alt="Unidad Educativa Huacho Gnrade"
+            />
+            <p style="text-align: left; color: #fff; padding: 5px 10px">
+              <em>Bachiller en Ciencias</em>
+            </p>
+            <h5 style="text-align: left; padding: 0px 10px">2016 - 2021</h5>
+            <h6 style="text-align: left; color: #fff; padding: 0px 10px">
+              Unidad Educativa Huachi Grande
+            </h6>
+          </div>
+          <div
+            class="col-md-4 mt-4 mt-md-0 icon-box"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            style="padding: 0px 0px; padding-bottom: 5px; margin-right: 15px"
+          >
+            <img
+              src="assets/img/education/UTA.png"
+              class="img-fluid"
+              alt="Universidad Técnica de Ambato"
+            />
+            <p style="text-align: left; color: #fff; padding: 5px 10px">
+              <em>Ingeniero en Software</em>
+            </p>
+            <h5 style="text-align: left; padding: 0px 10px">
+              2021 - Actualidad
+            </h5>
+            <h6 style="text-align: left; color: #fff; padding: 0px 10px">
+              Universidad Técnica de Ambato
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2>Certificaciones</h2>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            style="position: relative; height: 437.75px"
+          >
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 0px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/UTA.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Arduino</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1uEpM_15JkPu9tWG212kmEPNsu1-hSyzn/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 370px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/UTA.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Java</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1ltuw3K0M6D2X2GxRZbm2iiIHSwn2-NSR/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 740px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/UTA.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Python y Django</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1BZD0yY-S6AFyZaYMgth9K42Qtndf3Qyd/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-project"
+              style="position: absolute; left: 0px; top: 218.875px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/kaspersky.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Active Directory</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1PqabxktlafwNnkqiXZS0REuDuiQEyL5X/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-project"
+              style="position: absolute; left: 370px; top: 218.875px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/kaspersky.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Pup y Exploit</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1WiGFGVtaALeVF2JOQ-mTfuGTgNBmIPOx/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-project"
+              style="position: absolute; left: 740px; top: 218.875px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/kaspersky.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Seguridad de Servidores</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://drive.google.com/file/d/1N7fHnkwmheMauwabUA3HP_WXv_WcZjit/view?usp=drive_link"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Education Section -->
+
+    <!-- Start Experience Section
+
+    <section id="experience" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a href="https://www.asu.edu/" style="color: #12d640"
+                  >Arizona State University</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">January 2021 - Present</h5>
+              <p style="text-align: left; color: #fff">
+                <em>Software Engineer </em>
+              </p>
+              <ul style="text-align: left">
+                <li>
+                  Managed large‑scale deployment of JupyterHub with Nbgrader and
+                  webwork software, facilitating approx 5500 students.
+                </li>
+                <li>
+                  Configured, troubleshot, and administered server‑side web
+                  applications for the statistics department.
+                </li>
+                <li>
+                  Handled Linux server administration and Apache configuration;
+                  automated tasks like user account creation, managing student
+                  database, and system maintenance using Shell and automation
+                  scripts, reducing manual work by 200%.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a href="https://www.augmenify.com/" style="color: #12d640"
+                  >Augmenify Infotech Pvt. Ltd.</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">August 2020 - November 2020</h5>
+              <p style="text-align: left; color: #fff">
+                <em>Backend Developer</em>
+              </p>
+              <ul style="text-align: left">
+                <li>
+                  Documented and coded server‑less web application for the hotel
+                  industry and designed REST API using Flask‑based JWT
+                  authentication.
+                </li>
+                <li>
+                  Redeveloped an existing system to support customer account
+                  management, scheduling, and time tracking; enabled dynamic API
+                  calls with the help of Amazon API Gateway, AWS Lambda, and
+                  DynamoDB.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://www.epitomesolutions.in/"
+                  style="color: #12d640"
+                  >Epitome Corporation Pvt. Ltd.</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">July 2019 - Dec 2019</h5>
+              <p style="text-align: left; color: #fff">
+                <em>Software Developer</em>
+              </p>
+              <ul style="text-align: left">
+                <li>
+                  Tested, designed, and developed backend APIs of WebRTC enabled
+                  multi‑party video conferencing web application and delivered
+                  the project 15 days ahead of schedule by efficiently designing
+                  the flow of the project.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://www.meditab.com/"
+                  target="_blank"
+                  style="color: #12d640"
+                  >Meditab Software Pvt. Ltd.</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">May 2018 - June 2018</h5>
+              <p style="text-align: left; color: #fff">
+                <em>Programmer Analyst</em>
+              </p>
+              <ul style="text-align: left">
+                <li>
+                  Optimized image processing algorithm of pill detection by
+                  creating customized MASKRCNN algorithm, increasing accuracy by
+                  15%; trained classification algorithm with the help of triplet
+                  loss to learn the image embedding of pill, reducing the hassle
+                  of collecting data of new pills.
+                </li>
+                <li>
+                  Devised a pipeline of the project to incorporate it into the
+                  product of the company. Implemented Restful APIs in Django
+                  that enabled our quality Analyst team to increase reporting
+                  speed by 46%.
+                </li>
+                <li>
+                  Built a web app to onboard data from the company’s product
+                  using Flask, Postgres, and AWS S3, enabling interactive charts
+                  in real-time.
+                </li>
+                <li>
+                  Mentored 2 interns to optimize the pill detection algorithm
+                  and to include the multiprocessing pipeline, increasing
+                  overall speed by 75%.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://www.sac.gov.in/Vyom/index.jsp"
+                  target="_blank"
+                  style="color: #12d640"
+                  >Space Application Centre, ISRO</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">Jan 2018 - May 2018</h5>
+              <p style="text-align: left; color: #fff">
+                <em>Research Intern</em>
+              </p>
+              <ul style="text-align: left">
+                <li>
+                  Implemented noise reduction algorithm on the satellite image
+                  and prepared architecture for detecting objects in
+                  high‑resolution satellite images, achieving 80% accuracy.
+                </li>
+                <li>
+                  Increased accessibility of satellite image data by redesigning
+                  database and application for showcasing graphical data.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- End Experience Section -->
+
+    <!-- Start Project Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="margin-top: 10px; margin-bottom: 20px">Proyectos</h2>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/typinggame.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/typingame.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <center><h4>Typing Game</h4></center>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/capigochi.gif"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/capigochi.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <center><h4>Capigochi</h4></center>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/mycreativeportfolio.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/my_creative_portfolio.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <center><h4>My Creative Portfolio</h4></center>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/project/uta.png" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/elecciones_uta.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <center><h4>Página de Elecciones De La UTA</h4></center>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>To-Do App</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/todo.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/todo.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <br>
+          <center><h4>Tech Blog</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/blog.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- End Project Section -->
+
+    <!-- Start Skills Section -->
+
+    <section id="skills" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="margin-top: 10px">Habilidades</h2>
+        </div>
+        <div class="row" style="margin-top: 20px">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="background: #f0f0f0"
+            >
+              <h4 style="text-align: left; color: #09203a">
+                Lenguajes y Bases de datos
+              </h4>
+              <p style="text-align: left">
+                <img
+                  src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="150"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="120"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="120"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="70"
+                  width="130"
+                />
+              </p>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="lefade-up"
+              data-aos-delay="100"
+              style="background: #f0f0f0"
+            >
+              <h4 style="text-align: left; color: #09203a">Frameworks</h4>
+              <p style="text-align: left">
+                <img
+                  src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+
+                <img
+                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+              </p>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="lefade-up"
+              data-aos-delay="100"
+              style="background: #f0f0f0"
+            >
+              <h4 style="text-align: left; color: #09203a">Herramientas</h4>
+              <p style="text-align: left">
+                <img
+                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/github/github-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+
+                <img
+                  src="https://www.vectorlogo.zone/logos/vercel/vercel-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Contact Section -->
+
+    <section id="contacts" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="margin-top: 10px">Contacto</h2>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Mi Dirección</h3>
+              <p>Av. Los Chasquis</p>
+              <p>y Rio Payamino</p>
+              <p>Ambato, Tungurahua, Ecuador</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Perfiles sociales</h3>
+              <div class="social-links">
+                <a
+                  href="https://github.com/JoelBonillaG"
+                  target="_blank"
+                  class="github"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  href="mailto:bjeferssonvinicio2005@gmail.com"
+                  target="_blank"
+                  class="google"
+                  ><i class="bx bxl-google"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Emails</h3>
+              <p>bjeferssonvinicio2005@gmail.com</p>
+              <p>fbonilla7785@uta.edu.ec</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Teléfono</h3>
+              <p>0992868385</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
+      </div>
+    </section>
+
+    <!-- End Contact Section -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: [
+          "Estudiante de Software",
+          "Desarrollador en formación",
+          "Entusiasta de la tecnología",
+        ],
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65,
+      });
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
